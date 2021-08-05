@@ -1,0 +1,16 @@
+Lo que hay:
+3 ejercicios 
+3 lecciones 
+3 examenes
+index
+home
+dashboard
+login
+registro
+
+base de datos
+
+por hacer:
+lecciones
+urls 
+insercion BD

@@ -1,0 +1,660 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Inside Studies - Evaluacion </title>
+
+    <!-- Custom fonts for this template-->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link
+        href="{% static 'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' %}"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top light">
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <i class="fas fa-laugh-wink fa-3x text-light"></i>
+                    </div>
+                    <hr>
+                     <a class="navbar-brand" href="#">
+                        Inside Studies
+                    </a>
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter"></span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Notificaciones
+                                </h6>
+                                
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todas las notificaciones</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter"></span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Mensajes
+                                </h6>
+                                
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Mas mensajes</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-dark-600 small">leonardo</span>
+                                <img class="img-profile rounded-circle"
+                                    src="{% static 'img/undraw_profile.svg' %}">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Ajustes
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Salir
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid align-items-center justify-content-center">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800 text-center">Nivel Básico</h1>
+                        
+                    </div>
+
+                    <!-- Content Row -->
+                   
+
+                    <!-- Content Row -->
+                    <div class="card text-center">
+                        <div class="card-header ">
+                            <h6 class="m-0 font-weight-bold text-primary">Evaluación 1</h6>
+                            <h7 class="m-0 font-weight-bold text-dark">Selecciona la respuesta correcta.</h7>
+                        </div>
+                    </div>
+                    <!-- Pregunta 1-->
+                    <div class="card-deck">
+                        <div class="card text-center text-dark">
+                            <p> 1. Se trata de la máquina principal, recibe y procesa datos para entregar resultados.</p>
+                        <div class="card-deck">
+                            <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                                <div class="card-header text-center">
+                                </div>
+                                <div class="card-body">
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header text-center">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Monitor</label>
+                                </div>
+                                <div class="card-body">
+                                    <img src="{%static '\img\monitor.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header text-center">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">CPU</label>
+                                </div>
+                                <div class="card-body">
+                                    <img src="{%static '\img\cpu.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                                </div>
+                            </div>
+                            <div class="card bg-light mb-3" style="max-width: 18rem;">
+                                <div class="card-header text-center">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Teclado</label>
+                                </div>
+                                <div class="card-body">
+                                    <img src="{%static '\img\teclado.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Pregunta 2-->
+                <div class="card-deck">
+                    <div class="card text-center text-dark">
+                        <p> 2. Aquí se despliegan la mayoría de programas e instrucciones que se le dan a la computadora.</p>
+                    <div class="card-deck">
+                        <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                            </div>
+                            <div class="card-body">
+                        </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option2">
+                                <label class="form-check-label" for="inlineCheckbox1">Monitor</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\monitor.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option2">
+                                <label class="form-check-label" for="inlineCheckbox1">Mouse o Ratón</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\mouse.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option2">
+                                <label class="form-check-label" for="inlineCheckbox1">Teclado</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\teclado.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+                <!-- Pregunta 3-->
+                    <div class="card text-center text-dark">
+                        <p> 3. Existen distintos tipos del mismo; Con él controlamos un cursor y podemos manejar distinots elementos
+                        de la pantalla.</p>
+                    <div class="card-deck">
+                        <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                            </div>
+                            <div class="card-body">
+                        </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option3">
+                                <label class="form-check-label" for="inlineCheckbox1">CPU</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\cpu.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option3">
+                                <label class="form-check-label" for="inlineCheckbox1">Ratón</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\mouse.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option3">
+                                <label class="form-check-label" for="inlineCheckbox1">Monitor</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\monitor.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                <!-- Pregunta 4-->
+                    <div class="card text-center text-dark">
+                        <p> 4. Ayuda a los usuarios a ingresar aquellas instrucciones o peticiones que el usuario deseé hacer llegar a 
+                        la computadora. </p>
+                    <div class="card-deck">
+                        <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                            </div>
+                            <div class="card-body">
+                        </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option4">
+                                <label class="form-check-label" for="inlineCheckbox1">Teclado</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\teclado.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option4">
+                                <label class="form-check-label" for="inlineCheckbox1">CPU</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\cpu.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option4">
+                                <label class="form-check-label" for="inlineCheckbox1">Monitor</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\monitor.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 5-->
+                    <div class="card text-center text-dark">
+                        <p> 5. Con esta tecla activamos/desactivamos el uso de letras mayúsculas y minúsculas. </p>
+                    <div class="card-deck">
+                        <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                            </div>
+                            <div class="card-body">
+                        </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option5">
+                                <label class="form-check-label" for="inlineCheckbox1">BloqMayus/CapsLock</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\BloqMayus.webp' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option5">
+                                <label class="form-check-label" for="inlineCheckbox1">Shift</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\shift.png' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option5">
+                                <label class="form-check-label" for="inlineCheckbox1">TAB</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\tab.jpg' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 6-->
+                    <div class="card text-center text-dark">
+                        <p> 6. Este ícono nos indica la actividad de una red wi-fi, es decir, el internet inalámbrico. </p>
+                    <div class="card-deck">
+                        <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                            </div>
+                            <div class="card-body">
+                        </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem; max-height: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option6">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\wifi_icon.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option6">
+                                <label class="form-check-label" for="inlineCheckbox1">2</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\cursor.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option6">
+                                <label class="form-check-label" for="inlineCheckbox1">3</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\sound.svg' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 7-->
+                    <div class="card text-center text-dark">
+                        <p> 7. Estas teclas, combinadas con otras como alt o ctrl, pueden realizar funciones como "pantalla completa", "cerrar pantalla"
+                        "modo suspensión". </p>
+                    <div class="card-deck">
+                        <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                            </div>
+                            <div class="card-body">
+                        </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem; max-height: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option7">
+                                <label class="form-check-label" for="inlineCheckbox1">Teclas de función</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\funcion.jpg' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option7">
+                                <label class="form-check-label" for="inlineCheckbox1">Teclado numérico</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\tecado_numerico.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 15rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option7">
+                                <label class="form-check-label" for="inlineCheckbox1">Teclado alfanumérico</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\alfanumerico.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pregunta 8-->
+                    <div class="card text-center text-dark">
+                        <p> 8. Con este botón podemos seleccionar un elemento de la pantalla o resaltarlo; su doble uso suele abrir 
+                        dichos elementos. </p>
+                    <div class="card-deck">
+                        <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                            </div>
+                            <div class="card-body">
+                        </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem; max-height: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option8">
+                                <label class="form-check-label" for="inlineCheckbox1">Clic Derecho</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\clic_derecho.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option8">
+                                <label class="form-check-label" for="inlineCheckbox1">Clic Izquierdo</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\clic_izquierdo.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option8">
+                                <label class="form-check-label" for="inlineCheckbox1">Clic del medio</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\clic_medio.webp' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pregunta 9-->
+                    <div class="card text-center text-dark">
+                        <p> 9. Este ícono es donde se puede mmanipular aquello que tenga que ver con el audio. </p>
+                    <div class="card-deck">
+                        <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                            </div>
+                            <div class="card-body">
+                        </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem; max-height: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option9">
+                                <label class="form-check-label" for="inlineCheckbox1">1</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\cursor.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option9">
+                                <label class="form-check-label" for="inlineCheckbox1">2</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\sound.svg' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option9">
+                                <label class="form-check-label" for="inlineCheckbox1">3</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\wifi_icon.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pregunta 10-->
+                    <div class="card text-center text-dark">
+                        <p> 10. Es con esta combinación de teclas que podemos copiar elementos seleccionados. </p>
+                    <div class="card-deck">
+                        <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                            </div>
+                            <div class="card-body">
+                        </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem; max-height: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option9">
+                                <label class="form-check-label" for="inlineCheckbox1"> ctrl + V </label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\ctrlV.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option9">
+                                <label class="form-check-label" for="inlineCheckbox1">ctrl + Z</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\ctrlZ.PNG' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                        <div class="card bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card-header text-center">
+                                <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option9">
+                                <label class="form-check-label" for="inlineCheckbox1">ctrl + C</label>
+                            </div>
+                            <div class="card-body">
+                                <img src="{%static '\img\ctrlC.png' %}" class="img-fluid rounded float-right" alt="..." style="max-height: 10rem;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#examModal">Terminar Examen</a>
+                        </div>
+                    </div> 
+            <!-- End of Main Content -->
+
+            <!-- Footer 
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; Inside Studios 2021</span>
+                    </div>
+                </div>
+            </footer>-->
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesion</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Selecciona "Salir" para cerrar sesion</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html">Salir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!-- examen Modal-->
+    <div class="modal fade" id="examModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Muy Bien!</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Finalizaste el exámen!, selecciona "Aceptar" para continuar.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="http://127.0.0.1:8000/leccion2_1/">Aceptar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{% static 'js/demo/chart-area-demo.js' %}"></script>
+    <script src="{% static 'js/demo/chart-pie-demo.js' %}"></script>
+
+</body>
+
+</html>

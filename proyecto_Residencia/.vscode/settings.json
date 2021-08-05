@@ -1,0 +1,4 @@
+{
+    "python.pythonPath": "C:\\Users\\leobe\\AppData\\Local\\Programs\\Python\\Python38-32\\python.exe",
+    "python.autoComplete.extraPaths": ["./path-to-your-code"]
+}

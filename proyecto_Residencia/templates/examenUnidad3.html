@@ -1,0 +1,512 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Inside Studies - Evaluacion </title>
+
+    <!-- Custom fonts for this template-->
+    <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+    <link
+        href="{% static 'https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i' %}"
+        rel="stylesheet">
+
+    <!-- Custom styles for this template-->
+    <link href="{% static 'css/sb-admin-2.min.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+    <!-- Page Wrapper -->
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        
+        <!-- End of Sidebar -->
+
+        <!-- Content Wrapper -->
+        <div id="content-wrapper" class="d-flex flex-column">
+
+            <!-- Main Content -->
+            <div id="content">
+
+                <!-- Topbar -->
+                <nav class="navbar navbar-expand navbar-light bg-primary topbar mb-4 static-top light">
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <i class="fas fa-laugh-wink fa-3x text-light"></i>
+                    </div>
+                    <hr>
+                     <a class="navbar-brand" href="#">
+                        Inside Studies
+                    </a>
+                    <!-- Sidebar Toggle (Topbar) -->
+                    <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+                        <i class="fa fa-bars"></i>
+                    </button>
+
+                    <!-- Topbar Search -->
+                    
+
+                    <!-- Topbar Navbar -->
+                    <ul class="navbar-nav ml-auto">
+
+                        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                        <li class="nav-item dropdown no-arrow d-sm-none">
+                            <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-search fa-fw"></i>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in"
+                                aria-labelledby="searchDropdown">
+                                <form class="form-inline mr-auto w-100 navbar-search">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control bg-light border-0 small"
+                                            placeholder="Search for..." aria-label="Search"
+                                            aria-describedby="basic-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="button">
+                                                <i class="fas fa-search fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Alerts -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-fw"></i>
+                                <!-- Counter - Alerts -->
+                                <span class="badge badge-danger badge-counter"></span>
+                            </a>
+                            <!-- Dropdown - Alerts -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">
+                                    Notificaciones
+                                </h6>
+                                
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Mostrar todas las notificaciones</a>
+                            </div>
+                        </li>
+
+                        <!-- Nav Item - Messages -->
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-fw"></i>
+                                <!-- Counter - Messages -->
+                                <span class="badge badge-danger badge-counter"></span>
+                            </a>
+                            <!-- Dropdown - Messages -->
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">
+                                    Mensajes
+                                </h6>
+                                
+                                <a class="dropdown-item text-center small text-gray-500" href="#">Mas mensajes</a>
+                            </div>
+                        </li>
+
+                        <div class="topbar-divider d-none d-sm-block"></div>
+
+                        <!-- Nav Item - User Information -->
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="mr-2 d-none d-lg-inline text-dark-600 small">leonardo</span>
+                                <img class="img-profile rounded-circle"
+                                    src="{% static 'img/undraw_profile.svg' %}">
+                            </a>
+                            <!-- Dropdown - User Information -->
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
+                                aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Perfil
+                                </a>
+                                <a class="dropdown-item" href="#">
+                                    <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Ajustes
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                                    <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                                    Salir
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </nav>
+                <!-- End of Topbar -->
+
+                <!-- Begin Page Content -->
+                <div class="container-fluid align-items-center justify-content-center">
+
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mb-0 text-gray-800 text-center">Nivel Avanzado</h1>
+                        
+                    </div>
+
+                    <!-- Content Row -->
+                   
+
+                    <!-- Content Row -->
+                    <div class="card text-center">
+                        <div class="card-header ">
+                            <h6 class="m-0 font-weight-bold text-primary">Evaluación 3</h6>
+                            <h7 class="m-0 font-weight-bold text-dark">Seleccione la respuesta correcta.</h7>
+                        </div>
+                    </div>
+                    <!-- Pregunta 1-->
+                    <div class="card-deck">
+                        <div class="card text-center text-dark">
+                            <p> 1. Este programa protege a la computadora de software dañino tanto dentro o fuera de internet.</p>
+                        <div class="card-deck">
+                            <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                                <div class="card-header text-center">
+                                </div>
+                            </div>
+                            <div class="card" style="max-width: 18rem;">
+                                <div class="card-header text-center">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Windows</label>
+                                </div>
+                            </div>
+                            <div class="card" style="max-width: 18rem;">
+                                <div class="card-header text-center">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">TXT</label>
+                                </div>
+                            </div>
+                            <div class="card" style="max-width: 18rem;">
+                                <div class="card-header text-center">
+                                    <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option1">
+                                    <label class="form-check-label" for="inlineCheckbox1">Antivirus</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 2-->
+                <div class="card text-center text-dark">
+                    <p> 2. Es un conglomerado de páginas y sitios que almacenan todo tipo de información, para acceder es necesario estar conectado
+                    alámbrica o inalámbricamente a un router o modem.</p>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option2">
+                            <label class="form-check-label" for="inlineCheckbox1">Sistema operativo</label>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option2">
+                            <label class="form-check-label" for="inlineCheckbox1">Unidad de almacenamiento</label>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option2">
+                            <label class="form-check-label" for="inlineCheckbox1">Internet</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 3-->
+                <div class="card text-center text-dark">
+                    <p> 3. Es un malware que se esconde detrás de otros programas para poder instalarse y dañar la computadora.</p>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option3">
+                            <label class="form-check-label" for="inlineCheckbox1">Troyano</label>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option3">
+                            <label class="form-check-label" for="inlineCheckbox1">Virus de gusano</label>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option3">
+                            <label class="form-check-label" for="inlineCheckbox1">Spyware</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 4-->
+                <div class="card text-center text-dark">
+                    <p> 4. Es un sitio de almacenamiento de Google donde se pueden guardar distintos tipos de archivos en la nube.</p>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3 invisible" style="max-width: 35rem;">
+                        <div class="card-header text-center">
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                        <input class="form-control form-control-lg" type="text" placeholder="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 5-->
+                <div class="card text-center text-dark">
+                    <p> 5. Sitio de alojamiento y reproducción de videos más utilizado en el mundo.</p>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option5">
+                            <label class="form-check-label" for="inlineCheckbox1">Google</label>
+                        </div>
+                        <div class="card-body">
+                                <img src="{%static '\img\google.png' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option5">
+                            <label class="form-check-label" for="inlineCheckbox1">Facebook</label>
+                        </div>
+                        <div class="body">
+                            <img src="{%static '\img\facebook.webp' %}" class="img-fluid rounded" alt="..." style="max-width: 14em;"> 
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option5">
+                            <label class="form-check-label" for="inlineCheckbox1">YouTube</label>
+                        </div>
+                        <div class="card">
+                            <img src="{%static '\img\youtube.jpg' %}" class="img-fluid rounded" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 6-->
+                <div class="card text-center text-dark">
+                    <p> 6. Navegador de internet que viene instalado por defecto en windows.</p>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3 invisible" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option5">
+                            <label class="form-check-label" for="inlineCheckbox1">Google Chrome</label>
+                        </div>
+                        <div class="card-body">
+                                <img src="{%static '\img\chrome.png' %}" class="img-fluid rounded float-right" alt="...">
+                            </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option5">
+                            <label class="form-check-label" for="inlineCheckbox1">Internet Explorer</label>
+                        </div>
+                        <div class="body">
+                            <img src="{%static '\img\internetexplorer.png' %}" class="img-fluid rounded" alt="..." style="max-width: 14em;"> 
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 18rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option5">
+                            <label class="form-check-label" for="inlineCheckbox1">Mozilla Firefox</label>
+                        </div>
+                        <div class="card">
+                            <img src="{%static '\img\firefox.jpg' %}" class="img-fluid rounded" alt="...">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 7-->
+                <div class="card text-center text-dark">
+                    <p> 7. Es un servicio de correo electrónico gratuito que ofrece Google como alternativa a Outlook de Microsoft o Yahoo!.</p>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3 invisible" style="max-width: 35rem;">
+                        <div class="card-header text-center">
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                        <input class="form-control form-control-lg" type="text" placeholder="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 8-->
+                <div class="card text-center text-dark">
+                    <p> 8. Los correos electrónicos son esenciales al momento de querer registrarse en distintos sitios web.</p>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3 invisible" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option8">
+                            <label class="form-check-label" for="inlineCheckbox1">Verdadero</label>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option8">
+                            <label class="form-check-label" for="inlineCheckbox1">Falso</label>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pregunta 9-->
+                <div class="card text-center text-dark">
+                    <p> 9. Para poder enviar un correo electrónico es necesario un destinatario, un mensaje y un archivo adjunto.</p>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3 invisible" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option9">
+                            <label class="form-check-label" for="inlineCheckbox1">Verdadero</label>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option9">
+                            <label class="form-check-label" for="inlineCheckbox1">Falso</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pregunta 10-->
+                <div class="card text-center text-dark">
+                    <p>10. La calidad de videos depende de la velocidad de internet que posea el usuario, así como de las capacidades de la computadora.</p>
+                <div class="card-deck">
+                    <div class="card bg-light mb-3 invisible" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option10">
+                            <label class="form-check-label" for="inlineCheckbox1">Verdadero</label>
+                        </div>
+                    </div>
+                    <div class="card" style="max-width: 20rem;">
+                        <div class="card-header text-center">
+                            <input class="form-check-input" type="radio" id="inlineCheckbox1" name="option10va">
+                            <label class="form-check-label" for="inlineCheckbox1">Falso</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Boton Terminar-->
+                <div class="card text-center">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#examModal">Terminar Examen</a>
+                        </div>
+                    </div> 
+            </div>
+            <!-- End of Main content-->
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+    <!-- End of Page Wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cerrar Sesion</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Selecciona "Salir" para cerrar sesion</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="login.html">Salir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- examen Modal-->
+    <div class="modal fade" id="examModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Muy Bien!</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Finalizaste el exámen!, selecciona "Aceptar" para continuar.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancelar</button>
+                    <a class="btn btn-primary" href="http://127.0.0.1:8000/dashboard/">Aceptar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+    <!-- Core plugin JavaScript-->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+    <!-- Custom scripts for all pages-->
+    <script src="{% static 'js/sb-admin-2.min.js' %}"></script>
+
+    <!-- Page level plugins -->
+    <script src="{% static 'vendor/chart.js/Chart.min.js' %}"></script>
+
+    <!-- Page level custom scripts -->
+    <script src="{% static 'js/demo/chart-area-demo.js' %}"></script>
+    <script src="{% static 'js/demo/chart-pie-demo.js' %}"></script>
+
+</body>
+
+</html>
