@@ -1,1 +1,1 @@
-web: gunicorn proyecto_Resdiencia.proyecto_Residencia.proyecto_Residencia.wsgi
+web: gunicorn proyecto_Resdiencia.proyecto_Residencia.proyecto_Residencia.wsgi:application --log-file -
